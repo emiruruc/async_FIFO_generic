@@ -11,11 +11,12 @@
 --               the standard Gray-code MSB-comparison technique.
 --
 -- Architecture reference:
---   C. E. Cummings, "Simulation and Synthesis Techniques for Asynchronous
---   FIFO Design," SNUG 2002 (Gray-code pointer synchronization architecture).
---   The VHDL implementation itself (signal naming, array-based synchronizer,
---   process structure) is original work.
---
+-- C. E. Cummings, “Simulation and Synthesis Techniques for Asynchronous FIFO  Design,” SNUG 2002.
+-- P. P. Chu, RTL Hardware Design Using VHDL: Coding for Efficiency, Portability,
+-- and Scalability, Wiley, 2006 (Chapter 16, FIFO design), consulted for general port structuring ideas.
+-- P.P.Chu,FPGAPrototypingbyVHDLExamples,Wiley,2008,consultedasageneral VHDL design and I/O-constraints reference.
+
+
 -- Generics    :
 --   data_width : width of a single FIFO word, in bits
 --   addr_width : address width; FIFO depth = 2**addr_width
